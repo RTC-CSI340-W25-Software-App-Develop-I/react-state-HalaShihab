@@ -1,14 +1,28 @@
 
-import Restaurant from "./Restaurant";
+// import Restaurant from "./Restaurant";
 
 //Containers are for behind the scenes logic  
-function RestaurantsContainer(props) {
-  console.log(props)
+// function RestaurantsContainer(props) {
+//   console.log(props)
+//   return (
+//     <div className="restaurantContainer">
+//       {props.restaurants.map(restaurant => <Restaurant restaurant={restaurant} />)}
+//     </div>
+//   );
+// }
+
+// export default RestaurantsContainer;
+import Restaurant from "./Restaurant";
+
+function RestaurantsContainer(props){
+  console.log(props);
   return (
     <div className="restaurantContainer">
       {props.restaurants.map(restaurant => <Restaurant restaurant={restaurant} />)}
-    </div>
-  );
+     </div>
+  )
+  
 }
 
 export default RestaurantsContainer;
+
